@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    font-family: /*"Winky Sans"*/ 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.botones{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.contactt{
+    display: inline-block;
+    background: #cc00a0;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.boton-scroll {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+
+.herocpu{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('/public/fonservi.jpg') center center/cover no-repeat;
+    height: 60vh;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.herocpu h1{
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+}
+.herocpu p{
+    text-align: center;
+    color: white;
+    width: 75%;
+}
+
+.serviss{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.serviss h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+.servis-content{
+    margin: auto;
+    width: 95%;
+}
+
+.servi-content{
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background: rgb(255, 239, 251);
+}
+.servi{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.servi img{
+    width: 600px; /*ancho*/
+    height: 350px; /*alto*/
+    border-radius: 10px;
+    
+}
+.servi-p{
+    width: 625px;
+    padding-left: 15px;
+}
+
+.servi-p p{
+    padding: 10px;
+    border-radius: 8px;
+    padding-bottom: 8px;
+    margin:25px 0;
+}
+
+.servi-p a{
+    background-color: #cc00a0;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.servi-p p:hover{
+    background-color: #e2bccf;
+    cursor: pointer;
+}
+
+.servi-content h1{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: left;
+}
