@@ -8,7 +8,7 @@
 }
 body{
   font-family: 'Winky Sans', sans-serif;
-  background: url('/public/fondopag.jpg') fixed;
+  background: url('/fondopag.jpg') fixed;
   background-position: center center; 
   background-repeat: no-repeat;       
   background-size: cover;
