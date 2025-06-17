@@ -41,29 +41,33 @@ showSlide(desplazamiento);
 
 
 const track = document.querySelector('.carousel-track');
-  const images = document.querySelectorAll('.carousel-image');
-  const nextButton = document.querySelector('.carousel-btn.next');
-  const prevButton = document.querySelector('.carousel-btn.prev');
-  let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-image');
+const nextButton = document.querySelector('.carousel-btn.next');
+const prevButton = document.querySelector('.carousel-btn.prev');
+let currentIndex = 0;
 
-  function updateCarousel() {
-    const width = images[0].clientWidth;
-    track.style.transform = `translateX(-${width * currentIndex}px)`;
+function updateCarousel() {
+  const width = images[0].clientWidth;
+  track.style.transform = `translateX(-${width * currentIndex}px)`;
+}
+
+nextButton.addEventListener('click', () => {
+  if (currentIndex < images.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Reinicia al inicio
   }
+  updateCarousel();
+});
 
-  nextButton.addEventListener('click', () => {
-    if (currentIndex < images.length - 1) {
-      currentIndex++;
-      updateCarousel();
-    }
-  });
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = images.length - 1; // Va al final
+  }
+  updateCarousel();
+});
 
-  prevButton.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateCarousel();
-    }
-  });
-
-  // Para que se ajuste automáticamente si cambian el tamaño de la ventana
-  window.addEventListener('resize', updateCarousel);
+// Ajusta el carrusel si cambia el tamaño de la ventana
+window.addEventListener('resize', updateCarousel);
